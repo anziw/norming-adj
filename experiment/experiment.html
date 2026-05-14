@@ -1,0 +1,210 @@
+<html>
+
+<head>
+    <title>Language Learning Experiment</title>
+
+    <!--JS-->
+
+    <!-- external general utilities -->
+    <script src="../_shared/js/jquery-1.11.1.min.js"></script>
+    <script src="../_shared/full-projects/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../_shared/js/underscore-min.js"></script>
+    <!-- if you want to draw stuff: -->
+    <!-- <script src="../_shared/js/raphael-min.js"></script> -->
+
+    <!-- cocolab experiment logic -->
+    <script src="../_shared/js/exp-V2.js"></script>
+    <script src="../_shared/js/stream-V2.js"></script>
+
+    <!-- cocolab general utilities -->
+    <script src="../_shared/js/mmturkey.js"></script>
+    <script src="../_shared/js/browserCheck.js"></script>
+    <script src="../_shared/js/utils.js"></script>
+    <!-- if you want to draw cute creatures (depends on raphael): -->
+    <!-- <script src="../_shared/js/ecosystem.js"></script> -->
+
+    <!-- experiment specific helper functions -->
+    <!-- <script src="js/local-utils.js"></script> -->
+
+    <!-- proliferate submission -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://proliferate.alps.science/static/js/proliferate.js" type="text/javascript"></script>
+
+    <!--CSS-->
+    <link href="../_shared/full-projects/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../_shared/css/cocolab-style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/local-style.css" rel="stylesheet" type="text/css"/>
+
+    <!-- experiment file -->
+    <script src="js/stims.js"></script>
+    <script type="text/javascript">
+      var CONDITION = 1;
+    </script>
+    <script src="js/template.js"></script>
+
+</head>
+
+<body onload="init();">
+  <noscript>This task requires JavaScript.</noscript>
+
+  <div class="slide" id="consent">
+    <div class="consent-body">
+      <header class="consent-card">
+        <h1>Title of Research Study: Investigating language representation and processing</h1>
+        <p><strong>Principal Investigator:</strong> Jiayi Lu</p>
+        <p><strong>Supported By:</strong> This research is supported by Northwestern University Department of Linguistics</p>
+      </header>
+
+      <section class="consent-card">
+        <h2>Key Information about this research study</h2>
+        <p>The following is a short summary of this study to help you decide whether to be a part of this study. Information that is more detailed is explained later on in this form.</p>
+        <ul>
+          <li>The purpose of this study is to probe native speaker's mental representation of the syntactic structures of sentences in their language, and the cognitive processes involved in real-time processing of the structures during comprehension.</li>
+          <li>You will be asked to read some sentences and rate how acceptable and natural they sound to you, based on your native speaker's intuition. You may also be prompted to answer short comprehension questions based on the sentences.</li>
+          <li>We expect that you will be in this research study for 15-20 minutes.</li>
+          <li>There is no potential risk of participation.</li>
+          <li>There is no benefit for participation.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Why am I being asked to take part in this research study?</h2>
+        <p>We are asking you to take part in this research study because you are an adult with no self-reported language impairment, and a user of the Prolific platform based in the United States.</p>
+      </section>
+
+      <section>
+        <h2>How many people will be in this study?</h2>
+        <p>We expect about 1000 people will be in this research study.</p>
+      </section>
+
+      <section>
+        <h2>What should I know about participating in a research study?</h2>
+        <ul>
+          <li>Whether or not you take part is up to you.</li>
+          <li>You can choose not to take part.</li>
+          <li>You can agree to take part and later change your mind.</li>
+          <li>Your decision will not be held against you.</li>
+          <li>You do not have to answer any question you do not want to answer.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What happens if I agree to participate in this study?</h2>
+        <p>If you agree to participate, you can start the experiment presented on Prolific. You will then read a variety of sentences on the screen of your device, and complete the rating tasks and comprehension questions. The task will take approximately 15-20 minutes.</p>
+      </section>
+
+      <section>
+        <h2>Will being in this study help me in any way?</h2>
+        <p>We cannot promise any benefits to you or others from your taking part in this research.</p>
+      </section>
+
+      <section>
+        <h2>Is there any way being in this study could be bad for me?</h2>
+        <p>There is no risk of participation. Since we do not collect any identifiable information (e.g. your name and contact information), and your Prolific user ID will not be stored, there is minimal risk of confidentiality being compromised.</p>
+      </section>
+
+      <section>
+        <h2>What happens if I do not want to be in this research, or I change my mind later?</h2>
+        <p>Participation in research is voluntary. You can decide to participate or not to participate, or withdraw from the study at any point. If you decide to withdraw from this study, any data already collected from you will be deleted.</p>
+      </section>
+
+      <section>
+        <h2>How will the researchers protect my information?</h2>
+        <p>The experiment is anonymized. Your Prolific user ID will be deleted from the data set before data processing and analysis begins. No other information that can be used to identify you (e.g. name, address, IP address, contact information) will be collected.</p>
+        <p>The raw data files will be stored in a password protected device. The data files will NOT contain any identifiable private information of you.</p>
+      </section>
+
+      <section>
+        <h2>Who will have access to the information collected during this research study? How might the information collected in this study be shared in the future?</h2>
+        <p>All data collected in the study, which do not contain any identifiable information that can be traced back to you, may be shared with the research community, with journals in which study results are published, and with databases and data repositories used for research.</p>
+      </section>
+
+      <section>
+        <h2>Will I be paid or given anything for taking part in this study?</h2>
+        <p>You will receive monetary compensation upon completion of this experiment. You will be paid at a rate of $12 per hour for your participation. The payment will be made through the Prolific platform.</p>
+      </section>
+
+      <section>
+        <h2>Who can I talk to?</h2>
+        <p>If you have questions, concerns, or complaints, you can contact the Principal Investigator Dr. Jiayi Lu by email at <a href="mailto:jiayi.lu@northwestern.edu">jiayi.lu@northwestern.edu</a>.</p>
+        <p>This research has been reviewed and approved by an Institutional Review Board ("IRB"). You may contact the IRB by phone at (312) 503-1376 or by email at <a href="mailto:irbcompliance@northwestern.edu">irbcompliance@northwestern.edu</a> if your questions are not being answered by the research team, you cannot reach the research team, you want to talk to someone besides the research team, or you have questions about your rights as a research participant.</p>
+      </section>
+
+      <section class="consent-card">
+        <p>If you want a copy of this consent for your records, you can print it from the screen.</p>
+        <p>If you wish to participate, please click the "Agree" button below, and you will be taken to the experiment.</p>
+        <p>If you do not wish to participate in this study, please exit the experiment by selecting X in the corner of your browser.</p>
+      </section>
+    </div>
+
+    <div class="consent-actions">
+      <input type="button" class="button" id="consent-agree" value="Agree – Continue to Experiment" onclick="exp.go();">
+    </div>
+  </div>
+
+  <div class="slide" id="welcome">
+    <p id="instruct-text">Welcome!</p>
+    <p>In this experiment, you will read 16 questions and answer each one by clicking Yes or No.</p>
+    <p>Please pay attention while reading these questions!</p>
+    <input id="start_button" type="button" class="button" value="Start Experiment">
+  </div>
+
+  <div class="slide" id="instructions">
+    <h3>Instructions</h3>
+    <p>On each page, you will see a question. Please indicate your answer by clicking <strong>Yes</strong> or <strong>No</strong>.</p>
+    <p><strong>Important</strong>: Please try to complete the experiment in one session without any interruptions.</p>
+    <input type="button" class="button" value="Continue" onclick="exp.go();">
+  </div>
+
+  <div class="slide" id="trial">
+    <p id="trial-question" class="question"></p>
+    <div id="response-buttons">
+      <input type="button" value="Yes" class="response-buttons button">
+      <input type="button" value="No" class="response-buttons button">
+    </div>
+  </div>
+
+  <div class="slide" id="subj_info">
+    <div class="long_form">
+      <div class="subj_info_title">Additional Questions</div>
+      <p class="info">Answering these questions is optional.</p>
+
+      <p>Age:</p>
+      <input type="text" id="age" />
+
+      <p>Gender:</p>
+      <select id="gender" name="gender">
+        <label><option value="f">female</option></label>
+        <label><option value="m" >male</option></label>
+        <label><option value="o">non-binary</option></label>
+      </select>
+
+      <p>How tired are you right now?</p>
+      <select id="tirednesslvl" name="tirednesslvl">
+        <label><option value="1">well rested</option></label>
+        <label><option value="2" >a little tired</option></label>
+        <label><option value="3" >I almost fell asleep during the experiment</option></label>
+      </select><br />
+
+      <br/>      <br/>
+
+      <button onclick="_s.submit()">Submit</button>
+    </div>
+  </div>
+
+  <div id="thanks" class="slide js" >
+    <p  class="big" id="thanks-text"> 
+      Thank you for participating! Your submission on Prolific will be approved within 5 business days. </p>
+      <p>You will be redirected to the Prolific completion page. Please wait!</p>
+  </div>
+
+  <div class="progress">
+    <span>Progress:</span>
+    <div class="bar-wrapper">
+      <div class="bar" width="0%">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
