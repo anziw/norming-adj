@@ -7,13 +7,13 @@ var items = [
       {
         "item": "1",
         "condition": "NOCON",
-        "question": "Can a table be big, round, wooden, dirty and very heavy?",
+        "question": "Can a table be big, round, dirty, and very heavy?",
         "trial_id": "1_NOCON"
       },
       {
         "item": "1",
         "condition": "CON",
-        "question": "Can a table be clean, round, wooden, dirty and very heavy?",
+        "question": "Can a table be clean, round, dirty, and very heavy?",
         "trial_id": "1_CON"
       }
     ]
@@ -24,13 +24,13 @@ var items = [
       {
         "item": "10",
         "condition": "NOCON",
-        "question": "Can a plant be tall, tropical, potted, alive and very fragile?",
+        "question": "Can a mountain be tall, green, far and very rocky?",
         "trial_id": "10_NOCON"
       },
       {
         "item": "10",
         "condition": "CON",
-        "question": "Can a plant be dead, tropical, potted, alive and very fragile?",
+        "question": "Can a mountain be nearby, green, far and very rocky?",
         "trial_id": "10_CON"
       }
     ]
@@ -41,13 +41,13 @@ var items = [
       {
         "item": "11",
         "condition": "NOCON",
-        "question": "Can a soup be fresh, thick, creamy, cold and very delicious?",
+        "question": "Can a fighter be short, young, weak and very handsome?",
         "trial_id": "11_NOCON"
       },
       {
         "item": "11",
         "condition": "CON",
-        "question": "Can a soup be hot, thick, creamy, cold and very delicious?",
+        "question": "Can a fighter be strong, young, weak and very handsome?",
         "trial_id": "11_CON"
       }
     ]
@@ -58,82 +58,14 @@ var items = [
       {
         "item": "12",
         "condition": "NOCON",
-        "question": "Can a hallway be dark, narrow, carpeted, long and very dusty?",
+        "question": "Can an exam be long, formal, difficult and very detailed?",
         "trial_id": "12_NOCON"
       },
       {
         "item": "12",
         "condition": "CON",
-        "question": "Can a hallway be short, narrow, carpeted, long and very dusty?",
+        "question": "Can an exam be easy, formal, difficult and very detailed?",
         "trial_id": "12_CON"
-      }
-    ]
-  },
-  {
-    "item_id": "13",
-    "conditions": [
-      {
-        "item": "13",
-        "condition": "NOCON",
-        "question": "Can a mountain be tall, rocky, green, far and very dangerous?",
-        "trial_id": "13_NOCON"
-      },
-      {
-        "item": "13",
-        "condition": "CON",
-        "question": "Can a mountain be nearby, rocky, green, far and very dangerous?",
-        "trial_id": "13_CON"
-      }
-    ]
-  },
-  {
-    "item_id": "14",
-    "conditions": [
-      {
-        "item": "14",
-        "condition": "NOCON",
-        "question": "Can a fighter be short, lean, young, weak and very slow?",
-        "trial_id": "14_NOCON"
-      },
-      {
-        "item": "14",
-        "condition": "CON",
-        "question": "Can a fighter be strong, lean, young, weak and very slow?",
-        "trial_id": "14_CON"
-      }
-    ]
-  },
-  {
-    "item_id": "15",
-    "conditions": [
-      {
-        "item": "15",
-        "condition": "NOCON",
-        "question": "Can a bread be stale, round, brown, hard and very dense?",
-        "trial_id": "15_NOCON"
-      },
-      {
-        "item": "15",
-        "condition": "CON",
-        "question": "Can a bread be soft, round, brown, hard and very dense?",
-        "trial_id": "15_CON"
-      }
-    ]
-  },
-  {
-    "item_id": "16",
-    "conditions": [
-      {
-        "item": "16",
-        "condition": "NOCON",
-        "question": "Can an exam be long, written, formal, difficult and very detailed?",
-        "trial_id": "16_NOCON"
-      },
-      {
-        "item": "16",
-        "condition": "CON",
-        "question": "Can an exam be easy, written, formal, difficult and very detailed?",
-        "trial_id": "16_CON"
       }
     ]
   },
@@ -143,13 +75,13 @@ var items = [
       {
         "item": "2",
         "condition": "NOCON",
-        "question": "Can a neighborhood be old, urban, diverse, dangerous and very welcoming?",
+        "question": "Can a neighborhood be old, urban, dangerous and very diverse?",
         "trial_id": "2_NOCON"
       },
       {
         "item": "2",
         "condition": "CON",
-        "question": "Can a neighborhood be safe, urban, diverse, dangerous and very welcoming?",
+        "question": "Can a neighborhood be safe, urban, dangerous and very diverse?",
         "trial_id": "2_CON"
       }
     ]
@@ -160,13 +92,13 @@ var items = [
       {
         "item": "3",
         "condition": "NOCON",
-        "question": "Can a cat be old, fluffy, ginger, sick and very thin?",
+        "question": "Can a cat be old, ginger, sick and very thin?",
         "trial_id": "3_NOCON"
       },
       {
         "item": "3",
         "condition": "CON",
-        "question": "Can a cat be healthy, fluffy, ginger, sick and very thin?",
+        "question": "Can a cat be healthy, ginger, sick and very thin?",
         "trial_id": "3_CON"
       }
     ]
@@ -177,13 +109,13 @@ var items = [
       {
         "item": "4",
         "condition": "NOCON",
-        "question": "Can a towel be clean, thick, white, wet and very heavy?",
+        "question": "Can a towel be clean, white, wet and very thick?",
         "trial_id": "4_NOCON"
       },
       {
         "item": "4",
         "condition": "CON",
-        "question": "Can a towel be dry, thick, white, wet and very heavy?",
+        "question": "Can a towel be dry, white, wet and very thick?",
         "trial_id": "4_CON"
       }
     ]
@@ -194,13 +126,13 @@ var items = [
       {
         "item": "5",
         "condition": "NOCON",
-        "question": "Can a stone be grey, oval, speckled, rough and very heavy?",
+        "question": "Can an egg be small, fresh, cracked and very fragile?",
         "trial_id": "5_NOCON"
       },
       {
         "item": "5",
         "condition": "CON",
-        "question": "Can a stone be smooth, oval, speckled, rough and very heavy?",
+        "question": "Can an egg be whole, fresh, cracked and very fragile?",
         "trial_id": "5_CON"
       }
     ]
@@ -211,13 +143,13 @@ var items = [
       {
         "item": "6",
         "condition": "NOCON",
-        "question": "Can an egg be small, white, fresh, cracked and very fragile?",
+        "question": "Can a dog be tired, large, hungry and very loud?",
         "trial_id": "6_NOCON"
       },
       {
         "item": "6",
         "condition": "CON",
-        "question": "Can an egg be whole, white, fresh, cracked and very fragile?",
+        "question": "Can a dog be full, large, hungry and very loud?",
         "trial_id": "6_CON"
       }
     ]
@@ -228,13 +160,13 @@ var items = [
       {
         "item": "7",
         "condition": "NOCON",
-        "question": "Can a dog be tired, large, brown, hungry and very loud?",
+        "question": "Can a road be narrow, long, curved and very steep?",
         "trial_id": "7_NOCON"
       },
       {
         "item": "7",
         "condition": "CON",
-        "question": "Can a dog be satiated, large, brown, hungry and very loud?",
+        "question": "Can a road be straight, long, curved and very steep?",
         "trial_id": "7_CON"
       }
     ]
@@ -245,13 +177,13 @@ var items = [
       {
         "item": "8",
         "condition": "NOCON",
-        "question": "Can a road be narrow, paved, long, curved and very steep?",
+        "question": "Can a shop be small, local, open and very quiet?",
         "trial_id": "8_NOCON"
       },
       {
         "item": "8",
         "condition": "CON",
-        "question": "Can a road be straight, paved, long, curved and very steep?",
+        "question": "Can a shop be closed, local, open and very quiet?",
         "trial_id": "8_CON"
       }
     ]
@@ -262,13 +194,13 @@ var items = [
       {
         "item": "9",
         "condition": "NOCON",
-        "question": "Can a shop be small, local, quiet, open and very crowded?",
+        "question": "Can a soup be fresh, creamy, cold and very delicious?",
         "trial_id": "9_NOCON"
       },
       {
         "item": "9",
         "condition": "CON",
-        "question": "Can a shop be closed, local, quiet, open and very crowded?",
+        "question": "Can a soup be hot, creamy, cold and very delicious?",
         "trial_id": "9_CON"
       }
     ]
